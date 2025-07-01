@@ -1,0 +1,39 @@
+.main-img {
+    width: 99%;
+}
+
+.thumb-img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.thumb-img:hover {
+    border-color: #ffc107;
+    cursor: pointer;
+}
+
+#smsConsentcontainer label a{
+    color: #000;
+}
+
+.product-hero form .form-check-input:focus,
+.product-hero form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+}
+
+.circledesign{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
+}
