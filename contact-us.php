@@ -2,7 +2,7 @@
 
 <main class="main">
    
-    <div class="heading">GET IN TOUCH WITH US</div>
+    <div class="heading">Get In Touch With Us</div>
 
     <div class="contact-wrapper row mx-auto ">
         <div class="contact-left col-md-5">
@@ -28,25 +28,26 @@
 </div>
 
         </div>
-        <div class="contact-right col-md-7">
+        
+        <div class="contact-right col-md-6 ">
             <form>
                 <div class="mb-3">
-                    <label for="name" class="form-label">Full Name *</label>
-                    <input type="text" class="form-control" id="name" required>
+                    
+                    <input type="text" class="form-control" placeholder="Full Name *" id="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Phone *</label>
-                    <input type="tel" class="form-control" id="phone" required>
+                   
+                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email *</label>
-                    <input type="email" class="form-control" id="email" required>
+                   
+                    <input type="email" class="form-control" placeholder="Email *" id="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4"></textarea>
+                    
+                    <textarea class="form-control" placeholder="Message" id="message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="btn btn-submit w-100">SUBMIT</button>
+                <button type="submit" class="btn btn-submit w-100  ">SUBMIT</button>
             </form>
         </div>
     </div>
