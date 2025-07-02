@@ -1,5 +1,4 @@
 <?php include('includes/header.php'); ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 
 <main class="blog-page">
@@ -64,22 +63,26 @@
     <section class="featured-boxes">
         <div class="box">
             <img src="images/featured box 1.webp" alt="Boxes Template">
-           
+
         </div>
         <div class="box">
             <img src="images/boxe2.webp" alt="Moving Boxes">
-        
+
         </div>
         <div class="box">
             <img src="images/box3.webp" alt="Dunnage Paper">
-           
+
         </div>
     </section>
 
 
     <div class="follow_us_main">
-        <h1 class="lastest-head">Latest Posts</h1>
-        <div class="follow_us_border"></div>
+       
+                <h1 class="lastest-head">Latest Posts</h1>
+                <h1 class="follow-us">Follow Us</h1>
+        
+        
+        <!-- <div class="follow_us_border"></div> -->
     </div>
 
     <!-- Latest + Blog Section in Grid -->
@@ -88,7 +91,7 @@
         <div class="left-column">
             <div class="latest-posts-left">
                 <img src="images/featured-post.jpg" alt="Featured Blog" />
-                <h2>Prepare Your Retail Packaging for Fall</h2>
+
             </div>
 
             <!-- Blog Cards Grid -->
@@ -100,9 +103,14 @@
                     </a>
                     <p>
                         When it comes to residential or commercial moving, the importance
-                         of packaging boxes can’t be overstated.
-                         These boxes ensure the safe...
+                        of packaging boxes can’t be overstated.
+                        These boxes ensure the safe...
                     </p>
+                    <!-- Author & Date Section -->
+                    <div class="card-footer">
+                        <span class="author">By John Doe</span>
+                        <span class="date">July 2, 2025 - 11:00 AM</span>
+                    </div>
                 </div>
 
                 <div class="blog-card">
@@ -112,9 +120,14 @@
                     </a>
                     <p>
                         When it comes to residential or commercial moving, the importance
-                         of packaging boxes can’t be overstated.
-                         These boxes ensure the safe...
+                        of packaging boxes can’t be overstated.
+                        These boxes ensure the safe...
                     </p>
+                    <!-- Author & Date Section -->
+                    <div class="card-footer">
+                        <span class="author">By John Doe</span>
+                        <span class="date">July 2, 2025 - 11:00 AM</span>
+                    </div>
                 </div>
 
                 <div class="blog-card">
@@ -124,9 +137,14 @@
                     </a>
                     <p>
                         When it comes to residential or commercial moving, the importance
-                         of packaging boxes can’t be overstated.
-                         These boxes ensure the safe...
+                        of packaging boxes can’t be overstated.
+                        These boxes ensure the safe...
                     </p>
+                    <!-- Author & Date Section -->
+                    <div class="card-footer">
+                        <span class="author">By John Doe</span>
+                        <span class="date">July 2, 2025 - 11:00 AM</span>
+                    </div>
                 </div>
 
                 <div class="blog-card">
@@ -136,16 +154,32 @@
                     </a>
                     <p>
                         When it comes to residential or commercial moving, the importance
-                         of packaging boxes can’t be overstated.
-                         These boxes ensure the safe...
+                        of packaging boxes can’t be overstated.
+                        These boxes ensure the safe...
                     </p>
+                    <!-- Author & Date Section -->
+                    <div class="card-footer">
+                        <span class="author">By John Doe</span>
+                        <span class="date">July 2, 2025 - 11:00 AM</span>
+                    </div>
                 </div>
 
             </section>
         </div>
 
         <!-- Right Column -->
+
+        
+
         <div class="right-column">
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
             <div class="latest-posts-right">
                 <div class="small-post">
                     <img src="images/post1.webp" alt="">
@@ -166,11 +200,11 @@
 
     <!-- Pagination -->
     <div class="pagination">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-  </div>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+    </div>
 
 </main>
 
