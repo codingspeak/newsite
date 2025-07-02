@@ -19,9 +19,9 @@
                <h4>Company</h4>
                <ul>
                  <li><a href="#">About Us</a></li>
-                 <li><a href="#">Contact Us</a></li>
+                 <li><a href="./contact-us.php">Contact Us</a></li>
                  <li><a href="#">FAQs</a></li>
-                 <li><a href="#">Blog</a></li>
+                 <li><a href="./blogs.php">Blog</a></li>
                  <li><a href="#">Privacy Policy</a></li>
                  <li><a href="#">Terms & Conditions</a></li>
                </ul>

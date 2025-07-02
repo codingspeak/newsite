@@ -1,88 +1,90 @@
 <?php include('includes/header.php'); ?>
 
-<main>
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1>Don't be a stranger<span>just say hello.</span></h1>
-            <p>We'd love to hear from you and answer any questions you might have</p>
+<main class="main">
+   
+    <div class="heading">GET IN TOUCH WITH US</div>
+
+    <div class="contact-wrapper row mx-auto ">
+        <div class="contact-left col-md-5">
+            <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Hi Image" />
+           <div class="contact-info text-center">
+  <p class="d-flex justify-content-center align-items-center mb-3">
+    <i class="fas fa-map-marker-alt fa-lg text-success me-2"></i>
+    <strong>931 Abia Martin Drive, PA</strong>
+  </p>
+  <p class="mb-3">
+    Pennsylvania-18104
+  </p>
+
+  <p class="d-flex justify-content-center align-items-center mb-3">
+    <i class="fas fa-phone-alt fa-lg text-success me-2 "></i>
+    <strong>Phone:</strong>&nbsp;+1-760-284-3410
+  </p>
+
+  <p class="d-flex justify-content-center align-items-center mb-3">
+    <i class="fas fa-envelope fa-lg text-success me-2"></i>
+    <strong>Email:</strong>&nbsp;hello@demoemail.com
+  </p>
+</div>
+
         </div>
-        
-        <div class="contact-content">
-            <div class="contact-info">
-                <h2 class="section-title">GET IN TOUCH WITH US</h2>
-                <p class="contact-desc">
-                    Thank you for your interest in our services. Please fill out the form below or email us directly at: 
-                    <strong>hello@demoemail.com</strong>
-                </p>
-                
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone Number</h3>
-                            <p>+1-760-284-3410</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email Address</h3>
-                            <p>hello@demoemail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Our Location</h3>
-                            <p>123 Business Avenue, Suite 100<br>San Francisco, CA 94107</p>
-                        </div>
-                    </div>
+        <div class="contact-right col-md-7">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name *</label>
+                    <input type="text" class="form-control" id="name" required>
                 </div>
-            </div>
-            
-            <div class="contact-form-section">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Enter your full name">
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone *</label>
+                    <input type="tel" class="form-control" id="phone" required>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email address">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="What is this regarding?">
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" placeholder="Type your message here..."></textarea>
-                </div>
-                
-                <button class="submit-btn">
-                    <i class="fas fa-paper-plane"></i> SUBMIT
-                </button>
-                
-                <div class="contact-email">
-                    <p>Prefer email? Contact us directly at <strong>hello@demoemail.com</strong></p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="contact-footer">
-            <p>© 2023 Company Name. All rights reserved. We do not share or trade customer information.</p>
+                <button type="submit" class="btn btn-submit w-100">SUBMIT</button>
+            </form>
         </div>
     </div>
 </main>
+
+
+<script>
+        // Form validation and submission
+        document.querySelector('.submit-btn').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if(name === '' || email === '' || message === '') {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            if(!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // Form submission success message
+            alert('Thank you for your message! We will contact you soon.');
+            
+            // Reset the form
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('subject').value = '';
+            document.getElementById('message').value = '';
+        });
+        
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
 
 <?php include('includes/footer.php'); ?>
