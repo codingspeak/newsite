@@ -2,38 +2,44 @@
 
 <div class="container-main">
     <!-- Left Sidebar -->
-    <nav class="sidebar">
-        <h2 class="table-heading">Table of Contents</h2>
-        <ul>
-            <li>
-                Steps to Customize a Tote Bag
-                <ul>
-                    <li>
-                        <a href="#choose-material" class="toc-link">Choose from Material Options</a>
-                        <ul class="style">
-                            <li><a href="#Jute">Jute</a></li>
-                            <li><a href="#Cotton">Cotton</a></li>
-                            <li><a href="#Canvas">Canvas</a></li>
-                            <li><a href="#Cardstock-&-Kraft-Paper">Cardstock & Kraft Paper</a></li>
-                            <li><a href="#PU-Synthetic-Leather">PU Synthetic Leather</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#unique-design" class="toc-link">Create a Unique Design</a></li>
-                    <li>
-                        <a href="#transfer-method" class="toc-link">Pick the Design Transfer Method</a>
-                        <ul class="style">
-                            <li><a href="#Screen-Printing">Screen Printing</a></li>
-                            <li><a href="#Embroidery">Embroidery</a></li>
-                            <li><a href="#Heat-Transfer">Heat Transfer</a></li>
-                            <li><a href="#Fabric-Painting">Fabric Painting</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#user-style" class="toc-link">Opt for the User-Friendly Style</a></li>
-                    <li><a href="#final-words" class="toc-link">Final Words</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+   <!-- Left Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-box">
+                <h2 class="table-heading">Table of Contents</h2>
+                <div class="toc-list">
+                    <ul>
+                        <li>
+                            Steps to Customize a Tote Bag
+                            <ul>
+                                <li>
+                                    <a href="#choose-material" class="toc-link">Choose from Material Options</a>
+                                    <ul class="sub-items">
+                                        <li><a href="#Jute">Jute</a></li>
+                                        <li><a href="#Cotton">Cotton</a></li>
+                                        <li><a href="#Canvas">Canvas</a></li>
+                                        <li><a href="#Cardstock-&-Kraft-Paper">Cardstock & Kraft Paper</a></li>
+                                        <li><a href="#PU-Synthetic-Leather">PU Synthetic Leather</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#unique-design" class="toc-link">Create a Unique Design</a></li>
+                                <li>
+                                    <a href="#transfer-method" class="toc-link">Pick the Design Transfer Method</a>
+                                    <ul class="sub-items">
+                                        <li><a href="#Screen-Printing">Screen Printing</a></li>
+                                        <li><a href="#Embroidery">Embroidery</a></li>
+                                        <li><a href="#Heat-Transfer">Heat Transfer</a></li>
+                                        <li><a href="#Fabric-Painting">Fabric Painting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#user-style" class="toc-link">Opt for the User-Friendly Style</a></li>
+                                <li><a href="#final-words" class="toc-link">Final Words</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
 
     <!-- Right Content -->
     <div class="content">
@@ -184,31 +190,70 @@
     </div>
 </div>
 
-<script>
-    const links = document.querySelectorAll(".toc-link");
-    const sections = Array.from(document.querySelectorAll("section, h2[id]"));
+<!-- js -->
 
-    function updateActiveLink() {
-        let current = sections[0];
-
-        for (let section of sections) {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= 80 && rect.bottom > 80) {
-                current = section;
-                break;
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll(".toc-link");
+            const sections = Array.from(document.querySelectorAll("section, article"));
+            const sidebarItems = document.querySelectorAll('.toc-list > ul > li > ul > li');
+            
+            // Function to update active link and expand parent
+            function updateActiveLink() {
+                let current = null;
+                
+                // Find the current section in view
+                for (let section of sections) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom > 100) {
+                        current = section;
+                        break;
+                    }
+                }
+                
+                // Remove active classes
+                links.forEach(link => link.classList.remove("active"));
+                sidebarItems.forEach(item => item.classList.remove("active"));
+                
+                if (current) {
+                    // Add active class to current link
+                    const activeLink = document.querySelector(`.toc-link[href="#${current.id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add("active");
+                        
+                        // Expand the parent item
+                        const parentLi = activeLink.closest('li');
+                        if (parentLi) {
+                            parentLi.classList.add("active");
+                        }
+                    }
+                }
             }
-        }
-
-        links.forEach(link => link.classList.remove("active"));
-        const activeLink = document.querySelector(`.toc-link[href="#${current.id}"]`);
-        if (activeLink) {
-            activeLink.classList.add("active");
-        }
-    }
-
-    window.addEventListener("scroll", updateActiveLink);
-    window.addEventListener("load", updateActiveLink);
-</script>
+            
+            // Initialize
+            updateActiveLink();
+            
+            // Update on scroll
+            window.addEventListener("scroll", updateActiveLink);
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 
 <?php include('includes/footer.php'); ?>

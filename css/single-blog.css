@@ -12,60 +12,104 @@
     .table-heading{
         font-weight: bold;
     }
-    .sidebar{
-        border: 1px solid #dfdfdf;
-        padding: 30px;
-    }
-    .sidebar {
-      width: 650px;
-      position: sticky;
-      top: 20px;
-      align-self: flex-start;
-      padding-right: 2rem;
-      border-right: 1px solid #ddd;
-    }
-
-    .sidebar h3 {
-      font-size: 18px;
-      margin-bottom: 1rem;
-    }
-
-    .sidebar ul {
-      /* list-style: none; */
-      padding: 0;
-    }
-
-    .sidebar li {
-      margin-bottom: 10px;
-       color: black; 
-    list-style-type: disc;
-    }
-    .style li a {
-        font-style: italic;
-    }
-    .toc-link {
-    color: black; 
-    text-decoration: none;
-    display: block;
-    padding: 5px 10px;
-}
-
-.toc-link.active {
-    background-color: #f8f8f8; /* Only active TOC item */
-    font-weight: bold;
-}
-
-    .sidebar a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    .sidebar a.active {
-      color: #000;
-    }
  
 
+     /* Sidebar Styles */
+        .sidebar {
+            width: 320px;
+            position: sticky;
+            top: 20px;
+            align-self: flex-start;
+        }
+        
+        .sidebar-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .table-heading {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: black;
+            /* background: #2c3e50; */
+            padding: 20px 25px;
+            margin: 0;
+        }
+        
+        .toc-list {
+            padding: 15px;
+        }
+        
+    
+        .toc-list li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+        
+        .toc-list > ul > li {
+            font-weight: 500;
+            color: #4d535a;
+        }
+        
+        .toc-list > ul > li > ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+        
+        .toc-link {
+            color: #4d535a;
+            text-decoration: none;
+            display: block;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .toc-link:hover {
+            background: #f0f7ff;
+            padding-left: 15px;
+        }
+        
+        .toc-link.active {
+            background: #e1f0fa;
+            font-weight: 600;
+            color: #2980b9;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+            /* text-decoration: none; */
+        }
+        
+        .sub-items {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            padding-left: 15px;
+        }
+        
+        .toc-list li.active > .sub-items,
+        .toc-list li:hover > .sub-items {
+            max-height: 500px;
+        }
+        
+        .sub-items li a {
+            font-style: italic;
+            color: #555;
+            font-size: 0.95rem;
+            padding: 6px 12px;
+        }
+        
+        .sub-items li a:hover {
+            color: #3498db;
+        }
+        
+        .sub-items li a.active {
+            color: #2980b9;
+            font-weight: 500;
+        }
+ 
+/* side bar */
 
 
 .single-blog-1{
