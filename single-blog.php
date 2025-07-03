@@ -137,6 +137,7 @@
         </section>
 
         <section>
+            <h2 class="faq-heading">FAQ's</h2>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">

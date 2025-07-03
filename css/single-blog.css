@@ -152,6 +152,9 @@
     }
 
     /* faq */
+    .faq-heading{
+        font-weight: bold;
+    }
     .accordion-button {
   background-color: #444;    
   color: #fff;               
