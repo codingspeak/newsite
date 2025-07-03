@@ -5,7 +5,7 @@
     }
 .container-main {
       display: flex;
-      max-width: 1200px;
+      max-width: 1350px;
       margin: 0 auto;
       padding: 2rem;
     }
@@ -115,16 +115,16 @@
 
 
 .single-blog-1{
-    max-width: 750px;
+    max-width: 900px;
 }
 .unique-design{
-    max-width: 750px;
+    max-width: 900px;
 }
 .opt-img{
-     max-width: 750px;
+     max-width: 900px;
 }
 .customize-tote{
-    max-width: 750px;
+    max-width: 950px;
 }
     .content {
       flex: 1;

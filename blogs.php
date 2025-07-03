@@ -16,12 +16,12 @@
 
     <style>
         .hero-banner {
-            width: 100%;
+            width: 1290px;
             overflow: hidden;
         }
 
         .slider-container {
-            max-width: 1140px;
+            max-width: 1300px;
             margin: 0 auto;
             overflow: hidden;
             position: relative;
@@ -61,28 +61,36 @@
 
     <!-- Featured Boxes Row -->
     <section class="featured-boxes">
-        <div class="box">
+        <div class="small-post">
             <img src="images/featured box 1.webp" alt="Boxes Template">
+            <p>Explore What Are the Colored Dots on Packaging?</p>
 
         </div>
-        <div class="box">
+        <div class="small-post">
             <img src="images/boxe2.webp" alt="Moving Boxes">
+            <p>How to Customize a Tote Bag? Read This Blog!</p>
 
         </div>
-        <div class="box">
+        <div class="small-post">
             <img src="images/box3.webp" alt="Dunnage Paper">
+            <p>A Comprehensive Guide on Boxes Template and How to Make It!</p>
 
         </div>
     </section>
 
 
     <div class="follow_us_main">
-       
-                <h1 class="lastest-head">Latest Posts</h1>
-                <h1 class="follow-us">Follow Us</h1>
-        
-        
-        <!-- <div class="follow_us_border"></div> -->
+        <h1 class="lastest-head ">Latest Posts</h1>
+        <div class="follow-us-flex">
+            <h1 class="follow-us">Follow Us</h1>
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
 
     <!-- Latest + Blog Section in Grid -->
@@ -168,18 +176,7 @@
         </div>
 
         <!-- Right Column -->
-
-        
-
         <div class="right-column">
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
             <div class="latest-posts-right">
                 <div class="small-post">
                     <img src="images/post1.webp" alt="">
