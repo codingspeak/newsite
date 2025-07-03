@@ -9,7 +9,7 @@
             <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Hi Image" />
 
             <div class="content-center">
-                <div class="contact-info">
+                <div class="mu-contact-info">
                 <p>
                     <i class="fas fa-map-marker-alt"></i>
                     931 Abia Martin Drive, PA<br>Pennsylvania-18104

@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contact-info i {
+.mu-contact-info i {
       color: #ffc107; /* soft mint green */
       border: 2px solid #ffc107;
       border-radius: 50%;
@@ -37,7 +37,7 @@ body {
       font-size: 18px;
     }
 
-    .contact-info p {
+    .mu-contact-info p {
       display: flex;
       align-items: center;
       justify-content: start;
@@ -47,7 +47,7 @@ body {
       color: #333;
     }
 
-    .contact-info {
+    .mu-contact-info {
       max-width: 400px;
       margin: auto;
     }
