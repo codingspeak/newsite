@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 
 <div class="container-main">
-    <!-- Left Sidebar -->
+   
    <!-- Left Sidebar -->
         <nav class="sidebar">
             <div class="sidebar-box">
