@@ -20,12 +20,14 @@
             position: sticky;
             top: 20px;
             align-self: flex-start;
+           
         }
         
         .sidebar-box {
-            background: white;
+            /* background: white; */
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+             border: 1px solid #dfdfdf;
             overflow: hidden;
         }
         
