@@ -97,10 +97,80 @@
             color: #444;
         }
         
-        /* .last-updated {
-            background: #f0f7ff;
-            padding: 1rem;
-            border-left: 4px solid #2a5298;
-            margin: 1.5rem 0;
-            border-radius: 0 8px 8px 0;
-        } */
+    
+        /* ============================
+   Tablet Devices (≤ 991px)
+   ============================ */
+@media (max-width: 991px) {
+    .main-container {
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .social-icon {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .icon {
+        margin: 0;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .privacy-heading h1 {
+        font-size: 36px;
+    }
+}
+
+/* ============================
+   Mobile Devices (≤ 576px)
+   ============================ */
+@media (max-width: 576px) {
+    .privacy-heading {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .privacy-heading h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .social-icon {
+        flex-direction: row;
+        position: fixed;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .icon i {
+        font-size: 24px !important;
+    }
+}
