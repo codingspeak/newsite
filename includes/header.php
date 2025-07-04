@@ -79,6 +79,19 @@
       <?php 
          }
       ?>
+
+      <?php 
+        if($page_url == 'privacy-policy.php'){
+            // $canonical = 'privacy-policy/';
+            // $title = 'Get Rush Order Luxury Custom Boxes Fast & Affordable';
+            // $description = 'Now you can order Rush Order Luxury Custom Boxes online at a low price and have them delivered to your location within a short time period.';
+            // $keywords = 'get rush order quote,fastest quote,beat my quote,affordable quote';
+            // $og_type = 'website';
+        ?>
+         <link rel="stylesheet" href="./css/privacy-policy.css">
+      <?php 
+         }
+      ?>
    </head>
    <body>
       <!-- Top Bar -->

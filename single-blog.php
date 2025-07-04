@@ -64,11 +64,11 @@
             <h2><strong>Choose from Material Options</strong></h2>
             <img class="single-blog-1" src="./images/single-blog-1.webp" alt="">
             <p>
-                Tote bags are one of the most essential and functional items for brands and consumers. They combine versatility, sustainability, and style. Tote bags are used for shopping and groceries most often.
+                Tote bags are one of the most essential and functional items for brands and consumers. They combine versatility, sustainability,<br/> and style. Tote bags are used for shopping and groceries most often.
 
-                However, most tote bags are also used for presenting gifts or as promotional items from brands to their target audience. What makes tote bags stylish is how they are customized.
+                However, most tote bags are also used for presenting gifts <br/> or as promotional items from brands to their target audience. What makes tote bags <br/> stylish is how they are customized.
 
-                Plain tote bags can not make a difference, especially for brands as customized as totes are. Wondering how to customize a tote bag for a greater impact?
+                Plain tote bags can not make a difference, especially for brands as customized as totes are. Wondering how to customize a tote bag for a greater <br/> impact?
 
                 Well, read this blog and you are good to go for customizing a perfect tote bag!
             </p>
@@ -92,7 +92,7 @@
             <h2><strong>Create a Unique Design</strong></h2>
             <img class="unique-design" src="./images/create-a-unique-design.webp" alt="">
             <p>
-                Decide on the design that you want to customize on a tote bag when exploring how to customize a tote bag. If the holiday season is near, you may consider a seasonal design theme for your tote bag. Otherwise, you can go with any trendy design like floral, funky, vintage, or nature-inspired.
+                Decide on the design that you want to customize on a tote bag when exploring how to customize a tote bag. If the holiday <br/> season is near, you may consider a seasonal design theme for your tote bag. Otherwise, you can go with any trendy design like floral, funky, vintage, or nature-inspired.
             </p>
         </section>
 
@@ -118,7 +118,7 @@
         <section id="user-style">
             <h2><strong>Opt for the User-Friendly Style</strong></h2>
             <img class="opt-img" src="./images/opt-for-the-user-friendly-style.webp" alt="">
-            <p>You may cut the fabric into your desired shape by watching any video on the internet. Consider customizing your tote bags in the following styles for convenience, style, and functionality:</p>
+            <p>You may cut the fabric into your desired shape by watching any video on the internet. Consider customizing your tote bags in <br/> the following styles for convenience, style, and functionality:</p>
             <ul>
                 <li>Expandable Tote Bags</li>
                 <li>Tote Bags with Zippers</li>
