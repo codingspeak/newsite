@@ -22,8 +22,8 @@
         }
         
         .social-icon {
-            position: sticky;
-            top: 25rem;
+            position: fixed;
+            top: 24rem;
             align-self: flex-start;
             display: flex;
             flex-direction: column;

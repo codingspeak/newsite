@@ -22,8 +22,8 @@
         }
         
         .social-icon {
-            position: sticky;
-            top: 25rem;
+            position: fixed;
+            top: 24rem;
             align-self: flex-start;
             display: flex;
             flex-direction: column;
@@ -77,7 +77,7 @@
         }
         
         .about-section {
-  padding: 10px 40px;
+  padding: 10px 115px;
   font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #333;
@@ -118,7 +118,7 @@
 }
 
 .about-image img {
-  max-width: 625px;
+  max-width: 660px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -131,4 +131,114 @@
   font-size: 20px;
   line-height: 1.7;
   margin-bottom: 15px;
+}
+
+
+/* ============================
+   Tablet Devices (≤ 991px)
+   ============================ */
+@media (max-width: 991px) {
+    .main-container {
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .social-icon {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .icon {
+        margin: 0;
+    }
+
+    .about-us-heading h1 {
+        font-size: 36px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .top-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .about-text p,
+    .bottom-text p {
+        font-size: 18px;
+    }
+}
+
+
+/* ============================
+   Mobile Devices (≤ 576px)
+   ============================ */
+@media (max-width: 576px) {
+    .about-us-heading {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-us-heading h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+
+    /* Reverse the order: image on top, text below */
+    .top-row {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .about-text p,
+    .bottom-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .social-icon {
+        flex-direction: row;
+        position: fixed;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .icon i {
+        font-size: 24px !important;
+    }
 }
