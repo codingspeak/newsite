@@ -1,4 +1,4 @@
-.privacy-heading{
+.about-us-heading{
     color: white;
     background-color: #212529;
 
@@ -8,7 +8,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.privacy-heading h1{
+.about-us-heading h1{
     font-size: 42px;
     font-weight: bold;
 }
@@ -76,31 +76,59 @@
            
         }
         
-        .content {
-            flex: 1;
-          
-            padding: 2.5rem;
-            border-radius: 12px;
-           
-        }
-        
-        h2 {
-            color: #ff6600;
-            margin: 1.8rem 0 1rem;
-            padding-bottom: 0.5rem;
-            font-weight: bold;
-           
-        }
-        
-        p {
-            margin-bottom: 1.2rem;
-            color: #444;
-        }
-        
-        /* .last-updated {
-            background: #f0f7ff;
-            padding: 1rem;
-            border-left: 4px solid #2a5298;
-            margin: 1.5rem 0;
-            border-radius: 0 8px 8px 0;
-        } */
+        .about-section {
+  padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.about-inner {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  max-width: 625px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.bottom-text {
+  margin-top: 10px;
+}
+
+.bottom-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
