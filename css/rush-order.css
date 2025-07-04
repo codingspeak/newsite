@@ -1,0 +1,266 @@
+.main-container {
+            display: flex;
+            max-width: 1500px;
+            margin: 2rem auto;
+            margin-right: 70px;
+            padding: 0 1.5rem;
+        }
+        
+        .social-icon {
+            position: sticky;
+            top: 25rem;
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+           margin-top: 150px;
+            border-radius: 50px;
+           
+            z-index: 100;
+        }
+        
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10%;
+            display: flex;
+            align-items: center;
+            text-decoration: none !important;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+          
+        }
+        
+        .icon:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .whatsapp {
+            background:  #25D366;
+        }
+        
+        .phone {
+            background: #A886CD;
+        }
+        
+        .mail {
+            background:  #FF549C;
+        }
+        .whatsapp i{
+            font-size: 40px;
+        }
+         .phone i{
+            font-size: 40px;
+        }
+         .mail i{
+            font-size: 40px;
+           
+        }
+
+        .flex{
+           display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .heading{
+            border-bottom: 2px solid #ffd9bf;
+            padding-bottom: 10px;
+            
+            color: #212529;
+        }
+        .heading-span{
+            color: #212529;
+            font-weight: bolder;
+        }
+        h4{
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        .p-span{
+            font-weight: bolder;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .contact-form {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #444;
+            font-size: 0.9rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #999;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .deadline-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .deadline-group .form-group {
+            flex: 1;
+        }
+        
+        .deadline-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #777;
+            padding-top: 22px;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .captcha-container {
+            background: #f9f9f9;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            max-width: 350px;
+            border: 1px solid #eee;
+        }
+        
+        .captcha-checkbox {
+            width: 22px;
+            height: 22px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .captcha-checkbox i{
+             display: none;
+        }
+        .captcha-checkbox.checked {
+            
+            background: #333;
+            border-color: #333;
+        }
+        
+        .captcha-checkbox.checked i {
+            display: block;
+            color: white;
+            font-size: 0.8rem;
+        }
+        
+        .captcha-text {
+            /* margin-top: 10px; */
+            display: flex;
+            
+        }
+        
+        .captcha-text h3 {
+            color: #444;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-top: 10px;
+            margin-right: 100px;
+            font-weight: bold;
+        }
+        
+        .captcha-text p {
+            color: #777;
+            font-size: 0.75rem;
+        }
+        
+        .privacy-terms {
+            text-align: start;
+            margin: 15px 0 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .privacy-terms a {
+            color: #444;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        
+        .privacy-terms a:hover {
+            text-decoration: underline;
+        }
+        
+        .no-spam {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .btn-parent{
+            text-align: right;
+        }
+        .submit-btn {
+            display: inline-block;
+           
+            width: 180px;
+            padding: 14px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #444;
+        }
+
+@media (max-width: 500px) {
+            .deadline-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .deadline-icon {
+                display: none;
+            }
+            
+            .contact-form {
+                padding: 20px;
+            }
+        }

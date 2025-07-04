@@ -105,6 +105,19 @@
       <?php 
          }
       ?>
+
+      <?php 
+        if($page_url == 'rush-order.php'){
+            // $canonical = 'about-us/';
+            // $title = 'Get Rush Order Luxury Custom Boxes Fast & Affordable';
+            // $description = 'Now you can order Rush Order Luxury Custom Boxes online at a low price and have them delivered to your location within a short time period.';
+            // $keywords = 'get rush order quote,fastest quote,beat my quote,affordable quote';
+            // $og_type = 'website';
+        ?>
+         <link rel="stylesheet" href="./css/rush-order.css">
+      <?php 
+         }
+      ?>
    </head>
    <body>
       <!-- Top Bar -->
